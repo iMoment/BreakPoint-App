@@ -24,6 +24,7 @@
 		91549DF71F72CC69001DA65B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		91549DFA1F72CC69001DA65B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		91549DFC1F72CC69001DA65B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		91DBECA21F72F5B1003CCD9B /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +67,7 @@
 				91549DF71F72CC69001DA65B /* Assets.xcassets */,
 				91549DF91F72CC69001DA65B /* LaunchScreen.storyboard */,
 				91549DFC1F72CC69001DA65B /* Info.plist */,
+				91DBECA21F72F5B1003CCD9B /* GoogleService-Info.plist */,
 			);
 			path = BreakPoint;
 			sourceTree = "<group>";
