@@ -9,13 +9,11 @@
 import UIKit
 
 class ShadowView: UIView {
-
-    /*
-    // Only override draw() if you perform custom drawing.
-    // An empty implementation adversely affects performance during animation.
-    override func draw(_ rect: CGRect) {
-        // Drawing code
+    
+    override func awakeFromNib() {
+        self.layer.shadowOpacity = 0.75
+        self.layer.shadowRadius = 5.0
+        self.layer.shadowColor = UIColor.black.cgColor
+        super.awakeFromNib()
     }
-    */
-
 }
