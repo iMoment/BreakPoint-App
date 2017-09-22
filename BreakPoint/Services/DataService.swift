@@ -39,6 +39,15 @@ class DataService {
     func createDatabaseUser(uid: String, userData: [String: Any]) {
         REF_USERS.child(uid).updateChildValues(userData)
     }
+    
+    func insertPost(withMessage message: String, forUID uid: String, withGroupKey groupKey: String?, insertComplete: @escaping CompletionHandler) {
+        if groupKey != nil {
+            //  TODO: Send to group reference
+        } else {
+            REF_FEED.childByAutoId().updateChildValues(["content": message, "senderID": uid])
+            insertComplete(true)
+        }
+    }
 }
 
 

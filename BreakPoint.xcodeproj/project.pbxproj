@@ -23,6 +23,7 @@
 		9193EAB51F74489E00BAB896 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9193EAB41F74489E00BAB896 /* AuthService.swift */; };
 		9193EAB81F74494500BAB896 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9193EAB71F74494500BAB896 /* Constants.swift */; };
 		91D833161F72FC7500D87A1F /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91D833151F72FC7500D87A1F /* DataService.swift */; };
+		91FD3C4A1F7596B7009AD61D /* CreatePostVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91FD3C491F7596B7009AD61D /* CreatePostVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,6 +44,7 @@
 		9193EAB41F74489E00BAB896 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
 		9193EAB71F74494500BAB896 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		91D833151F72FC7500D87A1F /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
+		91FD3C491F7596B7009AD61D /* CreatePostVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatePostVC.swift; sourceTree = "<group>"; };
 		C44F9D7732FF985317B18EC8 /* Pods-BreakPoint.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BreakPoint.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BreakPoint/Pods-BreakPoint.debug.xcconfig"; sourceTree = "<group>"; };
 		CE6510A7BA71F16662E6DE53 /* Pods_BreakPoint.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BreakPoint.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED363F90DC43C12696A9C95C /* Pods-BreakPoint.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BreakPoint.release.xcconfig"; path = "Pods/Target Support Files/Pods-BreakPoint/Pods-BreakPoint.release.xcconfig"; sourceTree = "<group>"; };
@@ -113,6 +115,7 @@
 				9116C9DE1F74360F0028F4FF /* AuthVC.swift */,
 				9116C9E01F74364D0028F4FF /* LoginVC.swift */,
 				91929DDB1F758DBA000CF50B /* SelfVC.swift */,
+				91FD3C491F7596B7009AD61D /* CreatePostVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -296,6 +299,7 @@
 				9116C9E11F74364D0028F4FF /* LoginVC.swift in Sources */,
 				9193EAB51F74489E00BAB896 /* AuthService.swift in Sources */,
 				91549DEF1F72CC69001DA65B /* AppDelegate.swift in Sources */,
+				91FD3C4A1F7596B7009AD61D /* CreatePostVC.swift in Sources */,
 				9193EAB81F74494500BAB896 /* Constants.swift in Sources */,
 				9116C9E51F74386E0028F4FF /* ShadowView.swift in Sources */,
 				91549DF11F72CC69001DA65B /* FeedVC.swift in Sources */,
