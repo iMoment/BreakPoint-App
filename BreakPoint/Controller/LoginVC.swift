@@ -16,6 +16,8 @@ class LoginVC: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        emailTextField.delegate = self
+        passwordTextField.delegate = self
     }
     
     @IBAction func closeButtonPressed(_ sender: UIButton) {
@@ -23,6 +25,29 @@ class LoginVC: UIViewController {
     }
     
     @IBAction func signInButtonPressed(_ sender: UIButton) {
-        
+        if emailTextField.text != nil && passwordTextField.text != nil {
+            AuthService.instance.loginUser(withEmail: emailTextField.text!, andPassword: passwordTextField.text!, loginComplete: { (success, loginError) in
+                if success {
+                    self.dismiss(animated: true, completion: nil)
+                } else {
+                    print(String(describing: loginError?.localizedDescription))
+                }
+                
+                AuthService.instance.registerUser(withEmail: self.emailTextField.text!, andPassword: self.passwordTextField.text!, userCreationComplete: { (success, registrationError) in
+                    if success {
+                        AuthService.instance.loginUser(withEmail: self.emailTextField.text!, andPassword: self.passwordTextField.text!, loginComplete: { (success, nil) in
+                            print("Successfully logged in user.")
+                            self.dismiss(animated: true, completion: nil)
+                        })
+                    } else {
+                        print(String(describing: registrationError?.localizedDescription))
+                    }
+                })
+            })
+        }
     }
+}
+
+extension LoginVC: UITextFieldDelegate {
+    
 }
