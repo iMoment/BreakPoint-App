@@ -138,7 +138,7 @@
                                     <constraint firstItem="LV2-Lp-zG9" firstAttribute="leading" secondItem="0Tl-yi-e7y" secondAttribute="leading" constant="20" id="lVr-Ds-25J"/>
                                 </constraints>
                             </view>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ocB-vI-6Nc">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="defaultProfileImage" translatesAutoresizingMaskIntoConstraints="NO" id="ocB-vI-6Nc">
                                 <rect key="frame" x="16" y="90" width="60" height="60"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="Vj7-60-WSF"/>

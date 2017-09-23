@@ -20,6 +20,7 @@ class CreatePostVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         inputTextView.delegate = self
+        insertButton.bindToKeyboard()
     }
     
     @IBAction func closeButtonPressed(_ sender: UIButton) {
