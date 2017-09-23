@@ -13,6 +13,7 @@
 		9116C9E31F7436990028F4FF /* InsetTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9116C9E21F7436990028F4FF /* InsetTextField.swift */; };
 		9116C9E51F74386E0028F4FF /* ShadowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9116C9E41F74386E0028F4FF /* ShadowView.swift */; };
 		91426E9D1F7664C700FC4021 /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91426E9C1F7664C700FC4021 /* UIViewExtension.swift */; };
+		91426EA11F76986600FC4021 /* FeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91426EA01F76986600FC4021 /* FeedCell.swift */; };
 		91549DEF1F72CC69001DA65B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91549DEE1F72CC69001DA65B /* AppDelegate.swift */; };
 		91549DF11F72CC69001DA65B /* FeedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91549DF01F72CC69001DA65B /* FeedVC.swift */; };
 		91549DF31F72CC69001DA65B /* GroupsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91549DF21F72CC69001DA65B /* GroupsVC.swift */; };
@@ -33,6 +34,7 @@
 		9116C9E21F7436990028F4FF /* InsetTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsetTextField.swift; sourceTree = "<group>"; };
 		9116C9E41F74386E0028F4FF /* ShadowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShadowView.swift; sourceTree = "<group>"; };
 		91426E9C1F7664C700FC4021 /* UIViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
+		91426EA01F76986600FC4021 /* FeedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedCell.swift; sourceTree = "<group>"; };
 		91549DEB1F72CC69001DA65B /* BreakPoint.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BreakPoint.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		91549DEE1F72CC69001DA65B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		91549DF01F72CC69001DA65B /* FeedVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedVC.swift; sourceTree = "<group>"; };
@@ -127,6 +129,7 @@
 			children = (
 				9116C9E21F7436990028F4FF /* InsetTextField.swift */,
 				9116C9E41F74386E0028F4FF /* ShadowView.swift */,
+				91426EA01F76986600FC4021 /* FeedCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -303,6 +306,7 @@
 				9193EAB51F74489E00BAB896 /* AuthService.swift in Sources */,
 				91549DEF1F72CC69001DA65B /* AppDelegate.swift in Sources */,
 				91FD3C4A1F7596B7009AD61D /* CreatePostVC.swift in Sources */,
+				91426EA11F76986600FC4021 /* FeedCell.swift in Sources */,
 				9193EAB81F74494500BAB896 /* Constants.swift in Sources */,
 				9116C9E51F74386E0028F4FF /* ShadowView.swift in Sources */,
 				91426E9D1F7664C700FC4021 /* UIViewExtension.swift in Sources */,
