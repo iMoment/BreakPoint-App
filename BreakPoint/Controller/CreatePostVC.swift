@@ -17,6 +17,11 @@ class CreatePostVC: UIViewController {
     @IBOutlet weak var inputTextView: UITextView!
     @IBOutlet weak var insertButton: UIButton!
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        self.emailLabel.text = Auth.auth().currentUser?.email
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         inputTextView.delegate = self
