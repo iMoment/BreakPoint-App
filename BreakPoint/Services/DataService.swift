@@ -102,6 +102,11 @@ class DataService {
             handler(idArray)
         }
     }
+    
+    func createGroup(withTitle title: String, andDescription description: String, forUserIds ids: [String], handler: @escaping CompletionHandler) {
+        REF_GROUPS.childByAutoId().updateChildValues(["title": title, "description": description, "members": ids])
+        handler(true)
+    }
 }
 
 
