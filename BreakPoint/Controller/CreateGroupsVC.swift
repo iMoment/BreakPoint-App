@@ -20,6 +20,8 @@ class CreateGroupsVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        emailTableView.dataSource = self
+        emailTableView.delegate = self
     }
     
     @IBAction func closeButtonPressed(_ sender: UIButton) {
@@ -30,3 +32,47 @@ class CreateGroupsVC: UIViewController {
         
     }
 }
+
+extension CreateGroupsVC: UITableViewDataSource {
+    
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 1
+    }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 3
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: "userCell", for: indexPath) as? UserCell else { return UITableViewCell() }
+        let profileImage = UIImage(named: "defaultProfileImage")
+        cell.configureCell(profileImage: profileImage!, email: "hello@world.com", isSelected: true)
+        return cell
+    }
+}
+
+extension CreateGroupsVC: UITableViewDelegate {
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

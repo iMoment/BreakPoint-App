@@ -75,17 +75,17 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="defaultProfileImage" translatesAutoresizingMaskIntoConstraints="NO" id="4k5-0Z-G2B">
-                                                    <rect key="frame" x="0.0" y="18" width="50" height="50"/>
+                                                    <rect key="frame" x="18" y="18" width="50" height="50"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="50" id="9Yt-OC-ubn"/>
                                                         <constraint firstAttribute="height" constant="50" id="k6q-8R-RCt"/>
                                                     </constraints>
                                                 </imageView>
                                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="sq2-GO-vBC">
-                                                    <rect key="frame" x="0.0" y="18" width="0.0" height="63.5"/>
+                                                    <rect key="frame" x="78" y="18" width="279" height="63.5"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="user@breakpoint.com" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yey-xW-OhG">
-                                                            <rect key="frame" x="0.0" y="0.0" width="0.0" height="20"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="279" height="20"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="height" constant="20" id="kya-GD-29d"/>
                                                             </constraints>
@@ -94,7 +94,7 @@
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Message content" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="yvn-wd-APs">
-                                                            <rect key="frame" x="0.0" y="26" width="0.0" height="37.5"/>
+                                                            <rect key="frame" x="0.0" y="26" width="279" height="37.5"/>
                                                             <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="12"/>
                                                             <color key="textColor" red="0.015686274510000001" green="0.6705882353" blue="0.7725490196" alpha="1" colorSpace="calibratedRGB"/>
                                                             <nil key="highlightedColor"/>
@@ -557,17 +557,56 @@
                                         <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="16"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
-                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ZkM-13-5dU">
+                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="60" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ZkM-13-5dU">
                                         <rect key="frame" x="0.0" y="208" width="343" height="349"/>
                                         <color key="backgroundColor" red="0.16078431369999999" green="0.16862745100000001" blue="0.20392156859999999" alpha="1" colorSpace="calibratedRGB"/>
                                         <prototypes>
-                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="GKw-H6-Rda">
-                                                <rect key="frame" x="0.0" y="28" width="343" height="44"/>
+                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="userCell" rowHeight="60" id="GKw-H6-Rda" customClass="UserCell" customModule="BreakPoint" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="28" width="343" height="60"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="GKw-H6-Rda" id="3W5-q1-qMA">
-                                                    <rect key="frame" x="0.0" y="0.0" width="343" height="44"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="343" height="60"/>
                                                     <autoresizingMask key="autoresizingMask"/>
+                                                    <subviews>
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="defaultProfileImage" translatesAutoresizingMaskIntoConstraints="NO" id="MDJ-vu-0OA">
+                                                            <rect key="frame" x="18" y="8" width="44" height="44"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" constant="44" id="Ftt-92-jR1"/>
+                                                                <constraint firstAttribute="height" constant="44" id="fxw-xM-zfA"/>
+                                                            </constraints>
+                                                        </imageView>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="user@breakpoint.com" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="8" translatesAutoresizingMaskIntoConstraints="NO" id="irc-46-b56">
+                                                            <rect key="frame" x="82" y="18" width="213" height="24"/>
+                                                            <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="16"/>
+                                                            <color key="textColor" red="0.56078431370000004" green="0.7843137255" blue="0.30588235289999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="whiteCheckmark" translatesAutoresizingMaskIntoConstraints="NO" id="YT4-PO-XFZ">
+                                                            <rect key="frame" x="305" y="8" width="20" height="44"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" constant="20" id="dcN-Kp-bC3"/>
+                                                            </constraints>
+                                                        </imageView>
+                                                    </subviews>
+                                                    <constraints>
+                                                        <constraint firstItem="YT4-PO-XFZ" firstAttribute="leading" secondItem="irc-46-b56" secondAttribute="trailing" constant="10" id="1pv-hC-nAY"/>
+                                                        <constraint firstItem="irc-46-b56" firstAttribute="leading" secondItem="MDJ-vu-0OA" secondAttribute="trailing" constant="20" id="3Qc-fH-uBK"/>
+                                                        <constraint firstAttribute="bottomMargin" secondItem="YT4-PO-XFZ" secondAttribute="bottom" id="HnH-dn-WZi"/>
+                                                        <constraint firstAttribute="trailingMargin" secondItem="YT4-PO-XFZ" secondAttribute="trailing" constant="10" id="Oav-Yt-Kek"/>
+                                                        <constraint firstItem="MDJ-vu-0OA" firstAttribute="bottom" secondItem="3W5-q1-qMA" secondAttribute="bottomMargin" id="Pwb-K2-Kfy"/>
+                                                        <constraint firstItem="MDJ-vu-0OA" firstAttribute="top" secondItem="3W5-q1-qMA" secondAttribute="topMargin" id="QY0-sy-lVY"/>
+                                                        <constraint firstItem="irc-46-b56" firstAttribute="top" secondItem="3W5-q1-qMA" secondAttribute="topMargin" constant="10" id="Us3-hG-KV1"/>
+                                                        <constraint firstItem="YT4-PO-XFZ" firstAttribute="top" secondItem="3W5-q1-qMA" secondAttribute="topMargin" id="Vd8-bE-Mlh"/>
+                                                        <constraint firstAttribute="bottomMargin" secondItem="irc-46-b56" secondAttribute="bottom" constant="10" id="iWC-8U-Mef"/>
+                                                        <constraint firstItem="MDJ-vu-0OA" firstAttribute="leading" secondItem="3W5-q1-qMA" secondAttribute="leadingMargin" constant="10" id="wnL-q2-ABX"/>
+                                                    </constraints>
                                                 </tableViewCellContentView>
+                                                <color key="backgroundColor" red="0.25490196079999999" green="0.27058823529999998" blue="0.31372549020000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                <connections>
+                                                    <outlet property="checkImageView" destination="YT4-PO-XFZ" id="tVh-56-NbS"/>
+                                                    <outlet property="emailLabel" destination="irc-46-b56" id="dHN-Th-e9t"/>
+                                                    <outlet property="profileImageView" destination="MDJ-vu-0OA" id="dk3-oP-8xR"/>
+                                                </connections>
                                             </tableViewCell>
                                         </prototypes>
                                     </tableView>
@@ -830,6 +869,7 @@
         <image name="logoutIcon" width="19" height="21"/>
         <image name="me-tabIcon" width="25" height="25"/>
         <image name="send" width="29" height="29"/>
+        <image name="whiteCheckmark" width="18" height="14"/>
     </resources>
     <color key="tintColor" red="0.015686274510000001" green="0.6705882353" blue="0.7725490196" alpha="1" colorSpace="calibratedRGB"/>
 </document>
