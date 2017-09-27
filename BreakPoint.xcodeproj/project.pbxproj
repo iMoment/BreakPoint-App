@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		421243B509C596DD970CC4E4 /* Pods_BreakPoint.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE6510A7BA71F16662E6DE53 /* Pods_BreakPoint.framework */; };
+		91074D581F7B929D0079FDB5 /* GroupFeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91074D571F7B929D0079FDB5 /* GroupFeedCell.swift */; };
+		91074D5A1F7B92FA0079FDB5 /* GroupFeedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91074D591F7B92FA0079FDB5 /* GroupFeedVC.swift */; };
 		9116C9DF1F74360F0028F4FF /* AuthVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9116C9DE1F74360F0028F4FF /* AuthVC.swift */; };
 		9116C9E11F74364D0028F4FF /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9116C9E01F74364D0028F4FF /* LoginVC.swift */; };
 		9116C9E31F7436990028F4FF /* InsetTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9116C9E21F7436990028F4FF /* InsetTextField.swift */; };
@@ -34,6 +36,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		91074D571F7B929D0079FDB5 /* GroupFeedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupFeedCell.swift; sourceTree = "<group>"; };
+		91074D591F7B92FA0079FDB5 /* GroupFeedVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupFeedVC.swift; sourceTree = "<group>"; };
 		9116C9DE1F74360F0028F4FF /* AuthVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthVC.swift; sourceTree = "<group>"; };
 		9116C9E01F74364D0028F4FF /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		9116C9E21F7436990028F4FF /* InsetTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsetTextField.swift; sourceTree = "<group>"; };
@@ -131,6 +135,7 @@
 				91929DDB1F758DBA000CF50B /* SelfVC.swift */,
 				91FD3C491F7596B7009AD61D /* CreatePostVC.swift */,
 				91D872D61F783BC100560DA8 /* CreateGroupsVC.swift */,
+				91074D591F7B92FA0079FDB5 /* GroupFeedVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -143,6 +148,7 @@
 				91426EA01F76986600FC4021 /* FeedCell.swift */,
 				91C0827F1F7A5B3A00020468 /* UserCell.swift */,
 				914772D91F7A814F0018E9AC /* GroupCell.swift */,
+				91074D571F7B929D0079FDB5 /* GroupFeedCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -315,6 +321,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9116C9DF1F74360F0028F4FF /* AuthVC.swift in Sources */,
+				91074D5A1F7B92FA0079FDB5 /* GroupFeedVC.swift in Sources */,
 				91549DF31F72CC69001DA65B /* GroupsVC.swift in Sources */,
 				91929DDC1F758DBA000CF50B /* SelfVC.swift in Sources */,
 				9116C9E11F74364D0028F4FF /* LoginVC.swift in Sources */,
@@ -329,6 +336,7 @@
 				9116C9E51F74386E0028F4FF /* ShadowView.swift in Sources */,
 				91426E9D1F7664C700FC4021 /* UIViewExtension.swift in Sources */,
 				91549DF11F72CC69001DA65B /* FeedVC.swift in Sources */,
+				91074D581F7B929D0079FDB5 /* GroupFeedCell.swift in Sources */,
 				91D872D71F783BC100560DA8 /* CreateGroupsVC.swift in Sources */,
 				91D765741F77EE400044ACD2 /* Message.swift in Sources */,
 				9116C9E31F7436990028F4FF /* InsetTextField.swift in Sources */,
