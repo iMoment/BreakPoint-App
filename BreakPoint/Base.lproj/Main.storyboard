@@ -76,17 +76,17 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="defaultProfileImage" translatesAutoresizingMaskIntoConstraints="NO" id="4k5-0Z-G2B">
-                                                    <rect key="frame" x="18" y="18" width="50" height="50"/>
+                                                    <rect key="frame" x="0.0" y="18" width="50" height="50"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="50" id="9Yt-OC-ubn"/>
                                                         <constraint firstAttribute="height" constant="50" id="k6q-8R-RCt"/>
                                                     </constraints>
                                                 </imageView>
                                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="sq2-GO-vBC">
-                                                    <rect key="frame" x="78" y="18" width="279" height="63.5"/>
+                                                    <rect key="frame" x="0.0" y="18" width="0.0" height="63.5"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="user@breakpoint.com" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yey-xW-OhG">
-                                                            <rect key="frame" x="0.0" y="0.0" width="279" height="20"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="0.0" height="20"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="height" constant="20" id="kya-GD-29d"/>
                                                             </constraints>
@@ -95,7 +95,7 @@
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Message content" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="yvn-wd-APs">
-                                                            <rect key="frame" x="0.0" y="26" width="279" height="37.5"/>
+                                                            <rect key="frame" x="0.0" y="26" width="0.0" height="37.5"/>
                                                             <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="12"/>
                                                             <color key="textColor" red="0.015686274510000001" green="0.6705882353" blue="0.7725490196" alpha="1" colorSpace="calibratedRGB"/>
                                                             <nil key="highlightedColor"/>
@@ -684,7 +684,7 @@
         <!--Group FeedVC-->
         <scene sceneID="Di7-5O-Byn">
             <objects>
-                <viewController id="vNY-EG-pR6" customClass="GroupFeedVC" customModule="BreakPoint" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="GroupFeedVC" id="vNY-EG-pR6" customClass="GroupFeedVC" customModule="BreakPoint" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="ZJV-Mq-Tm8"/>
                         <viewControllerLayoutGuide type="bottom" id="BNs-j1-ust"/>
@@ -696,7 +696,7 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qj5-B9-all">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="70"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="_groupTitle" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bdC-k3-Gm4">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="_groupTitle" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bdC-k3-Gm4">
                                         <rect key="frame" x="87.5" y="35" width="200" height="21"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="21" id="q6q-Gf-h57"/>
@@ -706,7 +706,7 @@
                                         <color key="textColor" red="0.56078431370000004" green="0.7843137255" blue="0.30588235289999999" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dd7-ua-w45">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dd7-ua-w45">
                                         <rect key="frame" x="20" y="34" width="12" height="22"/>
                                         <state key="normal" image="backIcon"/>
                                         <connections>
@@ -719,6 +719,7 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="70" id="7cB-kW-XwD"/>
                                     <constraint firstItem="dd7-ua-w45" firstAttribute="leading" secondItem="qj5-B9-all" secondAttribute="leading" constant="20" id="Vff-9p-DEK"/>
+                                    <constraint firstItem="dd7-ua-w45" firstAttribute="top" secondItem="qj5-B9-all" secondAttribute="top" constant="34" id="f2K-Yb-FEQ"/>
                                     <constraint firstItem="bdC-k3-Gm4" firstAttribute="centerX" secondItem="qj5-B9-all" secondAttribute="centerX" id="poF-2e-ax8"/>
                                     <constraint firstItem="dd7-ua-w45" firstAttribute="centerY" secondItem="bdC-k3-Gm4" secondAttribute="centerY" id="uAi-Uf-5tp"/>
                                 </constraints>

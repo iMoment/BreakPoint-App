@@ -51,5 +51,32 @@ extension GroupsVC: UITableViewDataSource {
 }
 
 extension GroupsVC: UITableViewDelegate {
-    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        guard let groupFeedVC = storyboard?.instantiateViewController(withIdentifier: "GroupFeedVC") as? GroupFeedVC else { return }
+        groupFeedVC.initData(forGroup: groupsArray[indexPath.row])
+        self.present(groupFeedVC, animated: true, completion: nil)
+    }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
