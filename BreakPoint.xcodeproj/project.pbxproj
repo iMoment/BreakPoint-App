@@ -24,6 +24,7 @@
 		91549DF61F72CC69001DA65B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 91549DF41F72CC69001DA65B /* Main.storyboard */; };
 		91549DF81F72CC69001DA65B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 91549DF71F72CC69001DA65B /* Assets.xcassets */; };
 		91549DFB1F72CC69001DA65B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 91549DF91F72CC69001DA65B /* LaunchScreen.storyboard */; };
+		918748E81F7BC6C600F30321 /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 918748E71F7BC6C600F30321 /* UIViewControllerExtension.swift */; };
 		91929DDA1F754C9B000CF50B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 91929DD91F754BC5000CF50B /* GoogleService-Info.plist */; };
 		91929DDC1F758DBA000CF50B /* SelfVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91929DDB1F758DBA000CF50B /* SelfVC.swift */; };
 		9193EAB51F74489E00BAB896 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9193EAB41F74489E00BAB896 /* AuthService.swift */; };
@@ -54,6 +55,7 @@
 		91549DF71F72CC69001DA65B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		91549DFA1F72CC69001DA65B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		91549DFC1F72CC69001DA65B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		918748E71F7BC6C600F30321 /* UIViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtension.swift; sourceTree = "<group>"; };
 		91929DD91F754BC5000CF50B /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		91929DDB1F758DBA000CF50B /* SelfVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelfVC.swift; sourceTree = "<group>"; };
 		9193EAB41F74489E00BAB896 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
@@ -166,6 +168,7 @@
 			isa = PBXGroup;
 			children = (
 				91426E9C1F7664C700FC4021 /* UIViewExtension.swift */,
+				918748E71F7BC6C600F30321 /* UIViewControllerExtension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -340,6 +343,7 @@
 				91D872D71F783BC100560DA8 /* CreateGroupsVC.swift in Sources */,
 				91D765741F77EE400044ACD2 /* Message.swift in Sources */,
 				9116C9E31F7436990028F4FF /* InsetTextField.swift in Sources */,
+				918748E81F7BC6C600F30321 /* UIViewControllerExtension.swift in Sources */,
 				91D833161F72FC7500D87A1F /* DataService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
