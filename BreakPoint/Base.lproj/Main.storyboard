@@ -725,7 +725,7 @@
                                 </constraints>
                             </view>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="100" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="wTm-cs-k70">
-                                <rect key="frame" x="0.0" y="103" width="375" height="564"/>
+                                <rect key="frame" x="0.0" y="103" width="375" height="504"/>
                                 <color key="backgroundColor" red="0.25490196079999999" green="0.27058823529999998" blue="0.31372549020000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="groupFeedCell" rowHeight="100" id="aTv-C7-ZpY" customClass="GroupFeedCell" customModule="BreakPoint" customModuleProvider="target">
@@ -736,17 +736,17 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="defaultProfileImage" translatesAutoresizingMaskIntoConstraints="NO" id="1UX-8z-KsZ">
-                                                    <rect key="frame" x="0.0" y="18" width="50" height="50"/>
+                                                    <rect key="frame" x="18" y="18" width="50" height="50"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="50" id="U5X-iB-zxu"/>
                                                         <constraint firstAttribute="width" constant="50" id="dRc-Ha-icI"/>
                                                     </constraints>
                                                 </imageView>
                                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="STq-PV-7Za">
-                                                    <rect key="frame" x="0.0" y="18" width="0.0" height="63.5"/>
+                                                    <rect key="frame" x="78" y="18" width="279" height="63.5"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="user@breakpoint.com" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zEt-r7-a4C">
-                                                            <rect key="frame" x="0.0" y="0.0" width="0.0" height="20"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="279" height="20"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="height" constant="20" id="vdv-Db-8EQ"/>
                                                             </constraints>
@@ -755,7 +755,7 @@
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Message content" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="UDc-0r-6qt">
-                                                            <rect key="frame" x="0.0" y="26" width="0.0" height="37.5"/>
+                                                            <rect key="frame" x="0.0" y="26" width="279" height="37.5"/>
                                                             <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="12"/>
                                                             <color key="textColor" red="0.015686274510000001" green="0.6705882353" blue="0.7725490196" alpha="1" colorSpace="calibratedRGB"/>
                                                             <nil key="highlightedColor"/>
@@ -833,10 +833,10 @@
                             <constraint firstItem="86V-SZ-4Qc" firstAttribute="trailing" secondItem="VZO-In-q9t" secondAttribute="trailingMargin" id="eqp-BE-eqN"/>
                             <constraint firstItem="BNs-j1-ust" firstAttribute="top" secondItem="8Bu-kM-LBj" secondAttribute="bottom" id="fV7-pt-Ajh"/>
                             <constraint firstItem="qj5-B9-all" firstAttribute="leading" secondItem="VZO-In-q9t" secondAttribute="leading" id="mSu-C1-77n"/>
+                            <constraint firstItem="8Bu-kM-LBj" firstAttribute="top" secondItem="wTm-cs-k70" secondAttribute="bottom" id="oJU-Bp-ieI"/>
                             <constraint firstItem="8Bu-kM-LBj" firstAttribute="leading" secondItem="VZO-In-q9t" secondAttribute="leading" id="pXu-km-gsw"/>
                             <constraint firstItem="qj5-B9-all" firstAttribute="top" secondItem="VZO-In-q9t" secondAttribute="top" id="qG0-9u-Q38"/>
                             <constraint firstAttribute="trailing" secondItem="qj5-B9-all" secondAttribute="trailing" id="xLh-lu-S4U"/>
-                            <constraint firstItem="BNs-j1-ust" firstAttribute="top" secondItem="wTm-cs-k70" secondAttribute="bottom" id="zoK-na-8pi"/>
                         </constraints>
                     </view>
                     <connections>
